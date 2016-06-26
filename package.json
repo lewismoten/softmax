@@ -1,5 +1,5 @@
 {
-  "name": "softmax",
+  "name": "softmax-fn",
   "version": "1.0.0",
   "description": "Softmax Function",
   "main": "dist/index.js",

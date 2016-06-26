@@ -4,7 +4,7 @@ Creates a normalized exponential array from an array of numbers.
 
 ```javascript
 
-var softmax = require('softmax'),
+var softmax = require('softmax-fn'),
   values = [1, -2, 4.3],
   result = softmax(values);
 
