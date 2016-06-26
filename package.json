@@ -2,7 +2,7 @@
   "name": "softmax-fn",
   "version": "1.0.4",
   "description": "Softmax Function",
-  "main": "dist/index.js",
+  "main": "dist/softmax.js",
   "directories": {
     "lib": "lib",
     "example": "example"
@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/lewismoten/softmax/issues"
   },
-  "homepage": "https://github.com/lewismoten/softmax#readme",
+  "homepage": "https://lewismoten.github.io/softmax",
   "devDependencies": {
     "babel-preset-es2015-script": "^1.0.0",
     "coffee-script": "^1.10.0",

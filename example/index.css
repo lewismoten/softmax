@@ -1,8 +1,19 @@
 input {
-  width: 400px;
+  width: 500px;
 }
 
 textarea {
-  width: 400px;
-  height: 100px;
+  width: 500px;
+}
+#resultList {
+  height: 7em;
+}
+#htmlCode {
+  height: 7em;
+}
+#commonJsCode {
+  height: 5em;
+}
+#amdJsCode {
+  height: 5em;
 }

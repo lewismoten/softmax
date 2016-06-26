@@ -10,25 +10,28 @@
     if (doc.readyState === 'complete') {
 
       let el = (a) => doc.getElementById(a),
-        resultLabel = el('resultLabel'),
+        resultList = el('resultList'),
         inputsTextBox = el('inputsTextBox'),
-        rootLabel = el('rootLabel'),
-        commonJsLabel = el('commonJsLabel'),
-        amdLabel = el('amdLabel'),
+        htmlCode = el('htmlCode'),
+        commonJsCode = el('commonJsCode'),
+        amdCode = el('amdCode'),
         generateCode = () => {
 
-          rootLabel.textContent = `let inputs = [${inputsTextBox.value}],
-  outputs = softmax(inputs);
-console.log(outputs);`;
-          commonJsLabel.textContent = `let softmax = require('softmax-fn');
+          htmlCode.textContent = `<script src="softmax.js" type="text/javascript"></script>
+<script type="text/javascript">
+  let inputs = [${inputsTextBox.value}],
+    outputs = softmax(inputs);
+  console.log(outputs);
+</script>`;
+          commonJsCode.textContent = `let softmax = require('softmax-fn');
   inputs = [${inputsTextBox.value}],
   outputs = softmax(inputs);
 console.log(outputs);`;
-          amdLabel.textContent = `define(['softmax-fn'], function(softmax) {
+          amdCode.textContent = `define(['softmax-fn'], function(softmax) {
     inputs = [${inputsTextBox.value}],
   outputs = softmax(inputs);
   console.log(outputs);
-})`;
+});`;
 
           try {
 
@@ -36,11 +39,11 @@ console.log(outputs);`;
               inputs = rawInput.replace(/,\s+/, ',').split(',').map(Number),
               result = softmax(inputs);
 
-            resultLabel.textContent = result.join(',\n');
+            resultList.textContent = result.join(',\n');
 
           } catch (e) {
 
-            resultLabel.textContent = e;
+            resultList.textContent = e;
 
           }
 

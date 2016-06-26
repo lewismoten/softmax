@@ -1,4 +1,4 @@
-softmax = require("../dist/index")
+softmax = require("../dist/softmax")
 
 describe "dist raw", ->
   it "works in environment", ->

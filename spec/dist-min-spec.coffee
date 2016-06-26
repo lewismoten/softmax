@@ -1,4 +1,4 @@
-softmax = require("../dist/index.min")
+softmax = require("../dist/softmax.min")
 
 describe "dist minified", ->
   it "works in environment", ->

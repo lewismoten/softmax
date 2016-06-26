@@ -146,4 +146,4 @@
     return 'Invalid argument specified: ' + JSON.stringify(value);
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=softmax.js.map
