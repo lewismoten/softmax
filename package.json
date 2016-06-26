@@ -1,6 +1,6 @@
 {
   "name": "softmax-fn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Softmax Function",
   "main": "dist/index.js",
   "directories": {
@@ -45,6 +45,5 @@
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-uglify": "^1.5.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
