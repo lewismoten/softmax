@@ -9,21 +9,34 @@
     sourcemaps = require('gulp-sourcemaps'),
     istanbul = require('gulp-istanbul'),
     jasmine = require('gulp-jasmine'),
+    rename = require('gulp-rename'),
     config = require('./package.json');
 
   require('coffee-script/register');
 
-  gulp.task('build', () => gulp
+  gulp.task('build-es5', () => gulp
       .src([
         'lib/index.js',
         'lib/**/*.js'
       ], {base: 'lib'})
       .pipe(sourcemaps.init())
-      .pipe(babel({presets: ['es2015']}))
-      .pipe(uglify())
+      .pipe(babel({presets: ['es2015-script']}))
       .pipe(concat(config.main))
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('.'))
+    );
+
+  gulp.task('build', ['build-es5'], () => gulp
+      .src(config.main)
+      .pipe(sourcemaps.init())
+      .pipe(uglify({
+        compress: {}
+      }))
+      .pipe(rename({
+        suffix: '.min'
+      }))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('./dist'))
   );
 
   gulp.task('test', ['build', 'pre-test'], () => gulp
