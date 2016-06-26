@@ -1,10 +1,11 @@
 {
   "name": "softmax-fn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Softmax Function",
   "main": "dist/index.js",
   "directories": {
-    "doc": "docs"
+    "lib": "lib",
+    "example": "example"
   },
   "scripts": {
     "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
@@ -58,9 +59,5 @@
     "lib/",
     "dist/",
     "example/"
-  ],
-  "directories": {
-    "lib": "lib",
-    "example": "example"
-  }
+  ]
 }
