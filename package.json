@@ -56,6 +56,11 @@
   },
   "files": [
     "lib/",
-    "dist/"
-  ]
+    "dist/",
+    "example/"
+  ],
+  "directories": {
+    "lib": "lib",
+    "example": "example"
+  }
 }
