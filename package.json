@@ -39,12 +39,12 @@
     "gulp-istanbul": "^0.10.4",
     "gulp-jasmine": "^2.3.0",
     "istanbul": "^0.4.3",
-    "jasmine": "^2.4.1"
-  },
-  "dependencies": {
+    "jasmine": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
   }
 }
