@@ -26,7 +26,11 @@
     "neuron",
     "activation"
   ],
-  "author": "Lewis Edward Moten III",
+  "author": {
+    "name": "Lewis Edward Moten III",
+    "email": "lewismoten@gmail.com",
+    "url": "https://www.facebook.com/lewis.moten"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lewismoten/softmax/issues"
