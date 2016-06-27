@@ -27,5 +27,4 @@ var softmax = require('softmax-fn');
 
 ## Links
 - Github: [Softmax](https://github.com/lewismoten/softmax)
-- Github Page: [Softmax](https://lewismoten.github.io/softmax)
 - Wikipedia: [Softmax Function](https://en.wikipedia.org/wiki/Softmax_function)
