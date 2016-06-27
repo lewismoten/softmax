@@ -1,49 +1,30 @@
 # Softmax Function
 
-Creates a normalized exponential array from an array of numbers.
+The Softmax function
 
 ## Example
 
-The function is compatible with CommonJS and AMD. The softmax function will also be available on the global object *(window, global, this, etc.)*
-
-### HTML
-
-```html
-<script src="softmax.js" type="text/javascript"></script>
-<script type="text/javascript">
-  let inputs = [1, 2, 4.3],
-    outputs = softmax(inputs);
-  console.log(outputs);
-</script>
-```
-
-### CommonJS
-
 ```javascript
-let softmax = require('softmax-fn'),
-  inputs = [1, 2, 4.3],
-  outputs = softmax(inputs);
-console.log(outputs);
-```
-### AMD
+let softmax = require('softmax-fn');
 
-```javascript
-define(['softmax-fn'], function(softmax) {
-  let inputs = [1, 2, 4.3],
-    outputs = softmax(inputs);
-  console.log(outputs);
-});
-```
+softmax([1]);
+// [1]
 
-### Output
-All of the previous examples have the same output.
-```javascript
-[
-  0.03243497033829723,
-  0.08816739047720148,
-  0.8793976391845013
-]
+softmax([1, 2, 4.3]);
+// [0.03243497033829723, 0.08816739047720148, 0.8793976391845013]
 ```
+## Installation
+```
+$ npm install softmax-fn
+```
+## API
+```javascript
+var softmax = require('softmax-fn');
+```
+### softmax(values)
+- parameter *{number[]}* values: A list of numbers ranging from -10 to 10.
+- returns *{number[]}*: A normalized list of entries between 0 and 1 where the sum is 1.
+
 ## Links
 - Github: [Softmax](https://github.com/lewismoten/softmax)
 - Github Page: [Softmax](https://lewismoten.github.io/softmax)

@@ -1,4 +1,4 @@
-softmax = require("../lib/index")
+softmax = require("../index")
 
 describe "softmax", ->
   it "is empty for empty", ->
