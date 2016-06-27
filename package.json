@@ -30,17 +30,7 @@
     "url": "https://github.com/lewismoten/softmax/issues"
   },
   "homepage": "https://github.com/lewismoten/softmax",
-  "devDependencies": {
-    "babel-preset-es2015-script": "^1.0.0",
-    "coffee-script": "^1.10.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-jasmine": "^2.3.0",
-    "istanbul": "^0.4.3",
-    "jasmine": "^2.4.1"
-  },
+  "devDependencies": {},
   "dependencies": {},
   "engines": {
     "node": ">=6.0.0"
