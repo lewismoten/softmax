@@ -6,8 +6,6 @@
 
   function softmax(values) {
 
-    values.map(checkValue);
-
     if (values.length === 1) {
 
       return [1];
@@ -30,34 +28,6 @@
   function divide(dividend) {
 
     return dividend / this;
-
-  }
-
-  function checkValue(value) {
-
-    if (typeof value !== 'number') {
-
-      throw invalidArgumentMessage(value);
-
-    }
-
-    switch (value) {
-
-      case Infinity:
-      case -Infinity:
-      case Number.MAX_VALUE:
-      case -Number.MAX_VALUE:
-        throw invalidArgumentMessage(value);
-
-      default:
-
-    }
-
-  }
-
-  function invalidArgumentMessage(value) {
-
-    return `Invalid argument specified: ${JSON.stringify(value)}`;
 
   }
 
