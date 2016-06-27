@@ -23,13 +23,13 @@
     outputs = softmax(inputs);
   console.log(outputs);
 </script>`;
-          commonJsCode.textContent = `let softmax = require('softmax-fn');
+          commonJsCode.textContent = `let softmax = require('softmax-fn'),
   inputs = [${inputsTextBox.value}],
   outputs = softmax(inputs);
 console.log(outputs);`;
           amdCode.textContent = `define(['softmax-fn'], function(softmax) {
-    inputs = [${inputsTextBox.value}],
-  outputs = softmax(inputs);
+  let inputs = [${inputsTextBox.value}],
+    outputs = softmax(inputs);
   console.log(outputs);
 });`;
 

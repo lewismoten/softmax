@@ -20,7 +20,7 @@ The function is compatible with CommonJS and AMD. The softmax function will also
 ### CommonJS
 
 ```javascript
-let softmax = require('softmax-fn');
+let softmax = require('softmax-fn'),
   inputs = [1, 2, 4.3],
   outputs = softmax(inputs);
 console.log(outputs);
@@ -29,8 +29,8 @@ console.log(outputs);
 
 ```javascript
 define(['softmax-fn'], function(softmax) {
-    inputs = [1, 2, 4.3],
-  outputs = softmax(inputs);
+  let inputs = [1, 2, 4.3],
+    outputs = softmax(inputs);
   console.log(outputs);
 });
 ```
