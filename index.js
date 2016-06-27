@@ -2,33 +2,13 @@
 
   'use strict';
 
-  module.exports = softmax;
-
-  function softmax(values) {
-
-    if (values.length === 1) {
-
-      return [1];
-
-    }
+  module.exports = (values) => {
 
     const exponents = values.map(Math.exp),
-      total = exponents.reduce(sum, 0);
+      total = exponents.reduce((a, b) => a + b, 0);
 
-    return exponents.map(divide, total);
+    return exponents.map((exp) => exp / total);
 
-  }
-
-  function sum(augend, addend) {
-
-    return augend + addend;
-
-  }
-
-  function divide(dividend) {
-
-    return dividend / this;
-
-  }
+  };
 
 })();
