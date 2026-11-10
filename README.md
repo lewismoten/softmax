@@ -1,3 +1,5 @@
+![softmax: Softmax function](docs/images/social-preview.png)
+
 # Softmax Function
 
 The Softmax function
